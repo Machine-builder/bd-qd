@@ -19,7 +19,7 @@ function stringifyPrice(price) {
     return sprice;
 }
 
-function buying_setup() {
+window.onload = function(){
     var buying_options_elem = document.getElementById("buying-options");
 
     for (var i=0; i<buying_options.length; i++) {

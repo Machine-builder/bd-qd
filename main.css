@@ -73,6 +73,9 @@ img.title-icon {
     img.title-icon.icon-R {
         display: none;
     }
+    img.title-icon.icon-L {
+        display: none;
+    }
 }
 
 
