@@ -19,9 +19,7 @@ function stringifyPrice(price) {
     return sprice;
 }
 
-window.onload = function() {
-    console.log('window ready');
-
+function buying_setup() {
     var buying_options_elem = document.getElementById("buying-options");
 
     for (var i=0; i<buying_options.length; i++) {

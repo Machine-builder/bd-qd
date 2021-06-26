@@ -69,6 +69,13 @@ img.title-icon {
     width: 120px;
 }
 
+@media screen and (max-device-width: 480px){
+    img.title-icon.icon-R {
+        display: none;
+    }
+}
+
+
 div.pack-container {
     background-color: rgb(233, 233, 233);
     padding: 0.1px 0px;
