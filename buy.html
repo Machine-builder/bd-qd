@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="gallery.css">
 
     <title>Bedrock Quickdev</title>
+
+    <script src="sub_modules.js"></script>
+    <script src="buying.js"></script>
   </head>
   <body>
 
@@ -43,63 +46,46 @@
 
     </div>
 
-    <div class="body-contents container">
-
-      <h2>Overview</h2>
-      <p>
-        <b>Bedrock Quickdev</b> is a shiny and brand new piece of software dedicated to speeding up the Addon Development
-        workflow for Minecraft Bedrock Edition. Three main ideas of the program are
-        <span class="highlighted-concept">Functionality</span>,
-        <span class="highlighted-concept">Affordability</span>,
-        and
-        <span class="highlighted-concept">Simplicity</span>.
-        With the help of these three concepts, I (MACHINE_BUILDER) have designed to program to be as simple and straight-forward
-        to use as possible.
-      </p>
-
-      <h2 class="highlighted-concept">Functionality</h2>
-      <p>
-        <b>Bedrock Quickdev</b> is designed to be the one simple program for all of your Addon Development needs!
-
-        The software provides quick access to multiple different sub-modules which are all independantly designed
-        to suit smaller sub-tasks of developing an Addon for Minecraft Bedrock Edition. Each sub-module can be enabled
-        independantly from one another for each of your Addons, allowing you to setup a very customised and easy to use
-        workflow for your packs.
-      </p>
-      
-      <h2 class="highlighted-concept">Affordability</h2>
-      <p>
-        <b>Bedrock Quickdev</b> uses a smart sub-module system, which allows users to pick and choose which sub-modules
-        they'd like to buy, rather than buying the whole program with all sub-modules.
-
-        This, in turn, provides users with a customised checkout system, as to provide the user with the most minimal and
-        affordable configuration of the software.
-      </p>
-      
-      <h2 class="highlighted-concept">Simplicity</h2>
-      <p>
-        <b>Bedrock Quickdev</b> is created with a simple, minimalistic user interface design, which still provides
-        users with access to all of the required options.
-
-        The minimal interface allows all users, from beginner to experienced, to quickly and easily navigate the program and
-        all of its many functions and sub-modules.
-      </p>
-
-      <h2>Buying</h2>
-      <p>
-        When buying <b>Bedrock Quickdev</b>, you can freely enable and disable different sub-modules of the software.
-        You can also click the <i class="fa fa-info-circle" aria-hidden="true"></i> icon to see a more detailed
-        description of the sub-modules functionality.
-        Once you've selected all of the modules, you'll be able to copy a unique purchase code, which you can then
-        verify to confirm your purchase.
-        <br><br>
-        <a href="buy.html"><button type="button" class="btn btn-info">Buy Bedrock Quickdev</button></a>
-      </p>
+    <div class="row pack-container" id="buying-options">
 
     </div>
 
     <div id="lower-banner">
-      <p>Hehe now you have to buy it</p>
+      <p id="order-summary">You have selected 0/4 options</p>
+      
+      <div id="total-cost" class="container">
+        USD$0.00
+      </div>
+
+      <hr/>
+
+      <p id="purchase-instructions" class="container">
+        In order to checkout your purchase, You'll need to join my
+        <a href="https://discord.gg/jYHAKY2" class="blue-link">discord server</a>.
+        Once in the server, look for the bot called <a class='bot-name'>@Bedrock Quickdev#6085</a>
+        and DM the bot your purchase code, then just follow the bot's instructions from there.
+      </p>
+
+      <hr/>
+
+      <p>
+        <i class="fa fa-credit-card purchase-code-icon" aria-hidden="true"></i>
+        Purchase Code
+        <i class="fa fa-credit-card purchase-code-icon" aria-hidden="true"></i>
+      </p>
+
+      <div id="purchase-code" class="container">
+        ...purchase code...
+      </div>
+
+      <br>
+
+      <button type="button" class="btn btn-info" id="copy-purchase-code-button" onclick="copy_purchase_code()">
+        <i class="fa fa-files-o purchase-code-icon" aria-hidden="true"></i>
+        Copy Purchase Code
+        <i class="fa fa-files-o purchase-code-icon" aria-hidden="true"></i>
+      </button>
+
     </div>
 
 
