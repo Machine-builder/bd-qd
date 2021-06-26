@@ -19,6 +19,7 @@ div#lower-banner {
     margin-bottom: 15px;
     padding: 20px;
     text-align: center;
+    align-items: center;
 }
 
 div#title-inner {
@@ -31,7 +32,11 @@ div#title-inner {
 
 span#socials > a {
     font-size: 32px;
-    color: white;
+    color: rgb(255, 255, 255);
+}
+
+span#socials > a:hover {
+    color: rgb(157, 245, 255);
 }
 
 div.body-contents {
@@ -52,6 +57,12 @@ p.p-center {
 
 p > .highlighted-concept {
     font-weight: bold;
+}
+
+#lower-banner > p {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img.title-icon {
